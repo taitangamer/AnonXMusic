@@ -64,7 +64,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text="🥀 ᴜᴘᴅᴀᴛᴇ 💥", url=f"https://t.me/taitanoffice"
             ),
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ 💥", url=f"https://t.me/THEYSTOPPAGE"
+                text="🥀 sᴜᴩᴩᴏʀᴛ 💥", url=f"https://t.me/world_music_masti"
             )
         ],
         [
@@ -134,7 +134,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text="🥀 ᴜᴘᴅᴀᴛᴇ 💥", url=f"https://t.me/taitanoffice"
             ),
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ 💥", url=f"https://t.me/THEYSTOPPAGE"
+                text="🥀 sᴜᴩᴩᴏʀᴛ 💥", url=f"https://t.me/world_music_masti"
             )
         ],
         [
@@ -351,7 +351,7 @@ def queue_markup(_, videoid, chat_id):
                 text="🥀 ᴜᴘᴅᴀᴛᴇ 💥", url=f"https://t.me/taitanoffice"
             ),
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ 💥", url=f"https://t.me/THEYSTOPPAGE"
+                text="🥀 sᴜᴩᴩᴏʀᴛ 💥", url=f"https://t.me/world_music_masti"
             )
         ],
         [
