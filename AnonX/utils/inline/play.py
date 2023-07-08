@@ -83,25 +83,25 @@ def telegram_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     anon = math.floor(percentage)
     if 0 < anon <= 10:
-        bar = "♨️𝐓ᴀɪᴛᴀɴ 𝐈s 𝐒ᴛᴀʀᴛᴇᴅ♨️"
+        bar = "𝐓ᴀɪᴛᴀɴ 𝐈s 𝐒ᴛᴀʀᴛᴇᴅ"
     elif 10 < anon < 20:
-        bar = "♨️𝐓ᴀɪᴛᴀɴ Gᴀᴍᴇʀ Bᴏᴛ♨️"
+        bar = "𝐓ᴀɪᴛᴀɴ Gᴀᴍᴇʀ Bᴏᴛ"
     elif 20 <= anon < 30:
-        bar = "♨️Bᴏᴛ Oᴡɴᴇʀ Tᴀɪᴛᴀɴ♨️"
+        bar = "Bᴏᴛ Oᴡɴᴇʀ Tᴀɪᴛᴀɴ"
     elif 30 <= anon < 40:
-        bar = "♨️Tᴀɪᴛᴀɴ ʙɪɢ Dᴀᴛᴀʙᴀsᴇ♨️"
+        bar = "Tᴀɪᴛᴀɴ ʙɪɢ Dᴀᴛᴀʙᴀsᴇ"
     elif 40 <= anon < 50:
-        bar = "♨️Tᴀɪᴛᴀɴ Is sᴛᴀʀᴛᴇᴅ♨️"
+        bar = "Tᴀɪᴛᴀɴ Is sᴛᴀʀᴛᴇᴅ"
     elif 50 <= anon < 60:
-        bar = "Mᴀᴅᴇ Bʏ Tᴀɪᴛᴀɴ♨️"
+        bar = "Mᴀᴅᴇ Bʏ Tᴀɪᴛᴀɴ"
     elif 60 <= anon < 70:
-        bar = "♨️Tᴀɪᴛᴀɴ Gᴀᴍᴇʀ Bᴏᴛ♨️"
+        bar = "Tᴀɪᴛᴀɴ Gᴀᴍᴇʀ Bᴏᴛ"
     elif 70 <= anon < 80:
-        bar = "♨️Tᴀɪᴛᴀɴ Sᴇʀᴠᴇʀ Bᴏᴛ♨️"
+        bar = "Tᴀɪᴛᴀɴ Sᴇʀᴠᴇʀ Bᴏᴛ"
     elif 80 <= anon < 95:
-        bar = "♨️Tᴀɪᴛᴀɴ ᴅᴀᴛᴀʙᴀsᴇ♨️"
+        bar = "Tᴀɪᴛᴀɴ ᴅᴀᴛᴀʙᴀsᴇ"
     else:
-        bar = "♨️Bʏᴇ Bʏᴇ Fɪɴɪsʜᴇᴅ♨️"
+        bar = "Bʏᴇ Bʏᴇ Fɪɴɪsʜᴇᴅ"
 
 
     buttons = [
@@ -139,12 +139,6 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
-        ],
-        [
-            InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
             )
         ],
@@ -170,12 +164,6 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
         ],
         [
             InlineKeyboardButton(
